@@ -20,7 +20,7 @@ async def handle(msg):
     date = datetime.now()
     # function from helper to check when was last request
     check_request = check_last_request(date)
-    if command == '/list':
+    if command == '/list' or command == '/lst':
         # if last request more than 10 mn ago
         if check_request:
             # make request to server for all currency
